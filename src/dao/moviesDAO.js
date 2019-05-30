@@ -134,10 +134,10 @@ export default class MoviesDAO {
    * @returns {FacetedSearchReturn} FacetedSearchReturn
    */
   static async facetedSearch({
-    filters = null,
-    page = 0,
-    moviesPerPage = 20,
-  } = {}) {
+     filters = null,
+     page = 0,
+     moviesPerPage = 20,
+   } = {}) {
     if (!filters || !filters.cast) {
       throw new Error("Must specify cast members to filter by.")
     }
@@ -182,22 +182,13 @@ export default class MoviesDAO {
       },
     }
 
-    /**
-    Ticket: Faceted Search
-
-    Please append the skipStage, limitStage, and facetStage to the queryPipeline
-    (in that order). You can accomplish this by adding the stages directly to
-    the queryPipeline.
-
-    The queryPipeline is a Javascript array, so you can use push() or concat()
-    to complete this task, but you might have to do something about `const`.
-    */
-
     const queryPipeline = [
       matchStage,
       sortStage,
-      // TODO Ticket: Faceted Search
-      // Add the stages to queryPipeline in the correct order.
+      // here's where the three new stages are added
+      skipStage,
+      limitStage,
+      facetStage,
     ]
 
     try {
@@ -211,7 +202,6 @@ export default class MoviesDAO {
       return { error: "Results too large, be more restrictive in filter" }
     }
   }
-
   /**
    * Finds and returns movies by country.
    * Returns a list of objects, each object contains a title and an _id.
