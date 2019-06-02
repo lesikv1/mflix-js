@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a11d688e-bb32-4635-96d3-f75cda72a4cf" name="Default Changelist" comment="">
+    <list default="true" id="a11d688e-bb32-4635-96d3-f75cda72a4cf" name="Default Changelist" comment="task about Create/Update Comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/moviesDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/moviesDAO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/commentsDAO.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/commentsDAO.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,11 +63,44 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/get-comments.test.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="609">
                   <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/create-update-comments.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="695">
+                  <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/delete-comments.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="399">
+                  <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+                  <folding>
+                    <element signature="e#0#48#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/dao/commentsDAO.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="455">
+                  <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -79,7 +112,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/dao/moviesDAO.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="758">
+                <state relative-caret-position="884">
                   <caret line="316" column="3" selection-start-line="316" selection-start-column="3" selection-end-line="316" selection-end-column="3" />
                 </state>
               </provider>
@@ -137,6 +170,7 @@
         <option value="$PROJECT_DIR$/test/user-management.test.js" />
         <option value="$PROJECT_DIR$/src/dao/usersDAO.js" />
         <option value="$PROJECT_DIR$/src/dao/moviesDAO.js" />
+        <option value="$PROJECT_DIR$/src/dao/commentsDAO.js" />
       </list>
     </option>
   </component>
@@ -269,7 +303,7 @@
       <workItem from="1559205749349" duration="7000" />
       <workItem from="1559244660025" duration="5326000" />
       <workItem from="1559293197098" duration="606000" />
-      <workItem from="1559481712226" duration="5696000" />
+      <workItem from="1559481712226" duration="6987000" />
     </task>
     <task id="LOCAL-00001" summary="Faceted Search">
       <created>1559256012375</created>
@@ -292,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559491450531</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task about Get Comments">
+      <created>1559492010128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559492010128</updated>
+    </task>
+    <task id="LOCAL-00005" summary="task about Create/Update Comments">
+      <created>1559492184944</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559492184944</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -304,7 +352,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31023000" />
+    <option name="totallyTimeSpent" value="32314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1008" extended-state="6" />
@@ -357,7 +405,9 @@
     <MESSAGE value="Faceted Search" />
     <MESSAGE value="task about User Management" />
     <MESSAGE value="task about User Preferences" />
-    <option name="LAST_COMMIT_MESSAGE" value="task about User Preferences" />
+    <MESSAGE value="task about Get Comments" />
+    <MESSAGE value="task about Create/Update Comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="task about Create/Update Comments" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.js">
@@ -420,9 +470,6 @@
           <caret column="16" selection-start-column="7" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/commentsDAO.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test/projection.test.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -520,8 +567,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/moviesDAO.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
+        <state relative-caret-position="884">
           <caret line="316" column="3" selection-start-line="316" selection-start-column="3" selection-end-line="316" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/create-update-comments.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/delete-comments.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/commentsDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
         </state>
       </provider>
     </entry>
