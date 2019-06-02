@@ -28,7 +28,7 @@ describe("User Management", async () => {
      * NEVER store plaintext passwords, PLEASE
      */
     const actual = await UsersDAO.addUser(testUser)
-    expect(actual.success).toBeTruthy()
+    expect(actual.success).toBe(true)
     expect(actual.error).toBeUndefined()
 
     // we should be able to get the user
