@@ -138,20 +138,11 @@ export default class UsersDAO {
    */
   static async updatePreferences(email, preferences) {
     try {
-      /**
-      Ticket: User Preferences
 
-      Update the "preferences" field in the corresponding user's document to
-      reflect the new information in preferences.
-      */
-
-      preferences = preferences || {}
-
-      // TODO Ticket: User Preferences
-      // Use the data in "preferences" to update the user's preferences.
+      // here's how the update statement is implemented
       const updateResponse = await users.updateOne(
-        { someField: someValue },
-        { $set: { someOtherField: someOtherValue } },
+        { email },
+        { $set: { preferences } },
       )
 
       if (updateResponse.matchedCount === 0) {
@@ -159,10 +150,9 @@ export default class UsersDAO {
       }
       return updateResponse
     } catch (e) {
-      console.error(
-        `An error occurred while updating this user's preferences, ${e}`,
-      )
-      return { error: e }
+      return {
+        error: "An error occurred while updating this user's preferences.",
+      }
     }
   }
 
